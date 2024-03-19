@@ -16,20 +16,20 @@
   </head>
   <body>
     <!-- header -->
-    <div class="bg-[#171a21] h-full p-10 w-full">
+    <div class="bg-[#171a21] h-full p-2 md:p-8 w-full">
       <div
         class="grid grid-cols-2 lg:grid-cols-3 text-center text-white justify-center lg:justify-between"
       >
-        <div>
+        <div class="grid lg:justify-end mr-10 ml-10">
           <img src="assets/login/steamlogo.png" alt="" />
         </div>
-        <div class="lg:block">
+        <div class="lg:block md-[18px] text-[8px] mt-[1vh]">
           <a href="" class="mr-2 hover:text-[#38a4d2]">STORE</a>
           <a href="" class="mr-2 hover:text-[#38a4d2]">COMMUNITY</a>
           <a href="" class="mr-2 hover:text-[#38a4d2]">ABOUT</a>
           <a href="" class="mr-2 hover:text-[#38a4d2]">SUPPORT</a>
         </div>
-        <div class="hidden lg:block">
+        <div class="-mt-[20px] hidden sm:hidden md:hidden lg:block">
           <div class="flex justify-start space-x-2">
             <button class="bg-[#5c7e10] p-1 px-2 text-black">
               <i class="fa-solid fa-download mr-2"></i>install steam
@@ -50,10 +50,12 @@
       </div>
     </main>
     <footer class="w-full">
-      <div class="bg-[#2a475e] h-full p-10">
+      <div class="bg-[#2a475e] h-full p-10 text-[8px] lg:text-[18px]">
         <!-- baris satu -->
-        <div class="grid grid-cols-5 lg:grid-cols-4 text-center text-white">
-          <div>
+        <div
+          class="grid grid-cols-5 lg:grid-cols-4 lg:justify-end text-center text-white"
+        >
+          <div class="ml-10 lg:grid lg:justify-end lg:mr-2">
             <img src="assets/footer/logo_valve_footer.png" alt="" />
           </div>
           <div class="col-span-3 lg:col-span-2">
@@ -63,7 +65,7 @@
               VAT included in all prices where applicable.
             </p>
           </div>
-          <div>
+          <div class="grid ml-8 lg:ml-2">
             <img src="assets/footer/logo_steam_footer.png" alt="" />
           </div>
         </div>
