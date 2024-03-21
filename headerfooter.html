@@ -12,24 +12,34 @@
       src="https://kit.fontawesome.com/de991fd127.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Steam</title>
   </head>
   <body>
     <!-- header -->
-    <div class="bg-[#171a21] h-full p-2 md:p-8 w-full">
+    <div class="bg-[#171a21] h-full p-2 md:p-5 w-full">
       <div
-        class="grid grid-cols-2 lg:grid-cols-3 text-center text-white justify-center lg:justify-between"
+        class="grid grid-cols-3 lg:grid-cols-4 text-center text-white justify-center lg:justify-between"
       >
-        <div class="grid lg:justify-end mr-10 ml-10">
-          <img src="assets/login/steamlogo.png" alt="" />
+        <div
+          class="flex justify-center items-center lg:justify-end ml-5 sm:mr-10 sm:ml-10 w-auto h-auto"
+        >
+          <img
+            src="assets/login/steamlogo.png"
+            class="w-[9vh] sm:w-[10vh] md:w-[20vh]"
+            alt=""
+          />
         </div>
-        <div class="lg:block md-[18px] text-[8px] mt-[1vh] md:text-[20px]">
+
+        <div
+          class="lg:block md-[18px] text-[0.8rem] mt-[0.5vh] md:text-[2vw] lg:text-[1.2vw] col-span-2 lg:col-span-2 hidden sm:hidden md:hidden lg:block"
+        >
           <a href="" class="mr-2 hover:text-[#38a4d2]">STORE</a>
           <a href="" class="mr-2 hover:text-[#38a4d2]">COMMUNITY</a>
           <a href="" class="mr-2 hover:text-[#38a4d2]">ABOUT</a>
           <a href="" class="mr-2 hover:text-[#38a4d2]">SUPPORT</a>
         </div>
-        <div class="-mt-[20px] hidden sm:hidden md:hidden lg:block">
+        <div class="mt-[0.001rem] hidden sm:hidden md:hidden lg:block">
           <div class="flex justify-start space-x-2">
             <button class="bg-[#5c7e10] p-1 px-2 text-black">
               <i class="fa-solid fa-download mr-2"></i>install steam
