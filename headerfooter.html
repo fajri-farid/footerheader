@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>Steam</title>
   </head>
   <body>
@@ -21,11 +22,14 @@
       <div
         class="grid grid-cols-10 lg:grid-cols-4 text-center text-white justify-center lg:justify-between"
       >
-        <div class="lg:hidden block">
-          <p>H</p>
+        <div class="lg:hidden col-span-1 flex justify-center items-center">
+          <!-- Hamburger Button -->
+          <button id="hamburger-btn" class="text-white focus:outline-none">
+            H
+          </button>
         </div>
         <div
-          class="flex justify-center items-center lg:justify-end ml-5 sm:mr-10 sm:ml-10 w-auto h-auto lg:col-span-1 col-span-9"
+          class="flex justify-center items-center lg:justify-end col-span-9 lg:col-span-1"
         >
           <img
             src="assets/login/steamlogo.png"
@@ -54,6 +58,25 @@
       </div>
     </div>
     <!-- header end -->
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="hidden bg-[#171a21] text-white p-5 fixed top-0 left-0 w-full h-full z-50"
+    >
+      <div class="flex justify-end items-center">
+        <button id="close-menu-btn" class="text-white focus:outline-none">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="grid grid-rows-4 gap-4 mt-10">
+        <a href="" class="mr-2 hover:text-[#38a4d2]">STORE</a>
+        <a href="" class="mr-2 hover:text-[#38a4d2]">COMMUNITY</a>
+        <a href="" class="mr-2 hover:text-[#38a4d2]">ABOUT</a>
+        <a href="" class="mr-2 hover:text-[#38a4d2]">SUPPORT</a>
+      </div>
+    </div>
+    <!-- Mobile Menu end -->
     <main>
       <!-- container start -->
       <div
