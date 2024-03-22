@@ -1,17 +1,17 @@
 #mobile-menu {
-  background-color: rgba(0, 0, 0); /* Warna latar belakang menu */
+  background-color: rgba(0, 0, 0);  
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 20rem; /* Lebar menu */
-  z-index: 50; /* Z-index agar menutupi konten lain */
-  transform: translateX(-100%); /* Menu default tersembunyi */
+  width: 20rem; 
+  z-index: 50;
+  transform: translateX(-100%); 
   transition: transform 0.3s ease;
 }
 
 #mobile-menu.show {
-  transform: translateX(0); /* Menu muncul saat class show ditambahkan */
+  transform: translateX(0); 
 }
 
 #hamburger-btn {
@@ -25,11 +25,34 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0); /* Warna hitam transparan */
-  z-index: 49; /* Z-index harus lebih rendah dari menu untuk mengklik konten di bawah */
-  display: none; /* Defaultnya tidak ditampilkan */
+  background-color: rgba(0, 0, 0, 0); 
+  z-index: 49; 
+  display: none; 
 }
 
 .overlay.show {
-  display: block; /* Tampilkan overlay saat menu terbuka */
+  display: block;
+}
+
+.container {
+  margin-top: 1rem;
+  margin-left: auto; 
+  margin-right: auto;
+  display: none;
+  background: #234282;
+  color: white;
+}
+
+@media (min-width: 910px) {
+  .container {
+    display: block;
+  }
+}
+
+@media (min-width: 911px) {
+  .container {
+    display: block; 
+    grid-column: span 2; 
+    font-size: 1.2vw;
+  }
 }
